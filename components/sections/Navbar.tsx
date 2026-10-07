@@ -116,7 +116,7 @@ export default function Navbar() {
         className={`fixed inset-x-0 top-0 z-50 border-b border-[#10140F]/[0.08] bg-white/[0.96] backdrop-blur-[14px] transition-[height,box-shadow] duration-[220ms] ${
           scrolled
             ? "h-[72px] shadow-[0_10px_35px_rgba(16,20,15,0.08)]"
-            : "h-[88px]"
+            : "h-[72px]"
         }`}
       >
         <div className="mx-auto flex h-full w-[min(1180px,calc(100%-48px))] items-center justify-between gap-7">
@@ -150,9 +150,12 @@ export default function Navbar() {
               {PHONE_DISPLAY}
             </a>
 
-            <ButtonLink href={PHONE_LINK} className="min-h-[46px] px-[21px]">
+            <a
+              href={PHONE_LINK}
+              className="inline-flex h-[38px] items-center justify-center rounded-[6px] border border-transparent bg-[#68E236] px-[15px] text-[12px] font-bold leading-none text-[#10140F] shadow-[0_3px_0_#10140F] transition-all duration-200 hover:-translate-y-[1px] hover:bg-[#43C91A] hover:shadow-[0_4px_0_#10140F]"
+            >
               Call Now
-            </ButtonLink>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -169,6 +172,7 @@ export default function Navbar() {
       </header>
 
       {/* Mobile Backdrop */}
+      {/* Mobile Backdrop */}
       <div
         className={`fixed inset-0 z-[80] bg-[rgba(6,9,6,0.58)] transition-[opacity,visibility] duration-[250ms] min-[901px]:hidden ${
           open ? "visible opacity-100" : "invisible opacity-0"
@@ -177,59 +181,72 @@ export default function Navbar() {
         aria-hidden="true"
       />
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu Drawer */}
       <aside
-        className={`fixed right-0 top-0 z-[90] flex h-dvh w-[min(390px,90vw)] flex-col bg-white p-[25px] shadow-[-20px_0_60px_rgba(7,10,7,0.16)] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] min-[901px]:hidden ${
-          open ? "translate-x-0" : "translate-x-[105%]"
+        className={`fixed right-0 top-0 z-[90] flex h-[100dvh] w-[min(390px,88vw)] flex-col overflow-hidden bg-white shadow-[-20px_0_60px_rgba(7,10,7,0.16)] transition-transform duration-[320ms] ease-[cubic-bezier(0.22,1,0.36,1)] min-[901px]:hidden ${
+          open ? "translate-x-0" : "translate-x-full"
         }`}
         aria-hidden={!open}
       >
-        {/* Mobile Header */}
-        <div className="mb-[38px] flex items-center justify-between">
-          <Logo />
+        {/* Drawer Inner */}
+        <div className="flex min-h-0 flex-1 flex-col overflow-y-auto overscroll-contain">
+          {/* Mobile Header */}
+          <div className="flex shrink-0 items-center justify-between border-b border-[#DFE5DC] px-[22px] py-[20px]">
+            <Logo />
 
-          <button
-            type="button"
-            onClick={() => setOpen(false)}
-            className="grid h-[42px] w-[42px] place-items-center rounded-full border border-[#DFE5DC] bg-white text-[#10140F] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-[#68E236]/40 focus-visible:outline-offset-[3px]"
-            aria-label="Close navigation menu"
-          >
-            <X size={22} />
-          </button>
-        </div>
-
-        {/* Mobile Navigation */}
-        <nav className="grid" aria-label="Mobile navigation">
-          {navItems.map(([label, href]) => (
-            <a
-              key={label}
-              href={href}
+            <button
+              type="button"
               onClick={() => setOpen(false)}
-              className="flex items-center justify-between border-b border-[#DFE5DC] px-[3px] py-[17px] font-[family-name:var(--font-heading)] text-[23px] font-semibold text-[#10140F] transition-colors duration-150 hover:text-[#43C91A]"
+              className="grid h-[42px] w-[42px] shrink-0 place-items-center rounded-full border border-[#DFE5DC] bg-white text-[#10140F] transition-colors duration-150 hover:border-[#68E236] hover:bg-[#F5F7F2] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-[#68E236]/40 focus-visible:outline-offset-[3px]"
+              aria-label="Close navigation menu"
             >
-              {label}
-              <ChevronRight size={18} />
-            </a>
-          ))}
-        </nav>
+              <X size={21} strokeWidth={2.2} />
+            </button>
+          </div>
 
-        {/* Mobile CTA */}
-        <div className="mt-auto flex flex-col items-center rounded-[10px] bg-[#F5F7F2] p-6">
-          <p className="mb-1 text-[11px] text-[#667064]">
-            Need electrical help?
-          </p>
+          {/* Mobile Navigation */}
+          <nav className="px-[22px] pt-[18px]" aria-label="Mobile navigation">
+            {navItems.map(([label, href]) => (
+              <a
+                key={label}
+                href={href}
+                onClick={() => setOpen(false)}
+                className="group flex min-h-[58px] items-center justify-between border-b border-[#DFE5DC] px-[2px] py-[15px] font-[family-name:var(--font-heading)] text-[23px] font-semibold leading-none text-[#10140F] transition-colors duration-150 hover:text-[#43C91A]"
+              >
+                <span>{label}</span>
 
-          <a
-            href={PHONE_LINK}
-            className="mb-4 font-[family-name:var(--font-heading)] text-[29px] font-bold text-[#10140F]"
-          >
-            {PHONE_DISPLAY}
-          </a>
+                <ChevronRight
+                  size={18}
+                  strokeWidth={2}
+                  className="text-[#9AA398] transition-transform duration-200 group-hover:translate-x-1 group-hover:text-[#43C91A]"
+                />
+              </a>
+            ))}
+          </nav>
 
-          <ButtonLink href={PHONE_LINK} className="w-full">
-            <Phone size={18} />
-            Call Now
-          </ButtonLink>
+          {/* Mobile CTA */}
+          <div className="mt-auto px-[22px] pb-[22px] pt-[28px]">
+            <div className="rounded-[12px] bg-[#F5F7F2] p-[20px]">
+              <p className="mb-[5px] font-[family-name:var(--font-body)] text-[11px] font-medium text-[#667064]">
+                Need electrical help?
+              </p>
+
+              <a
+                href={PHONE_LINK}
+                className="mb-[17px] block font-[family-name:var(--font-heading)] text-[27px] font-bold leading-none tracking-[-0.01em] text-[#10140F]"
+              >
+                {PHONE_DISPLAY}
+              </a>
+
+              <ButtonLink
+                href={PHONE_LINK}
+                className="w-full min-h-[50px] px-[18px]"
+              >
+                <Phone size={17} />
+                Call Now
+              </ButtonLink>
+            </div>
+          </div>
         </div>
       </aside>
     </>

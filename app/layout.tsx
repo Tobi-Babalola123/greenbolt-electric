@@ -33,7 +33,7 @@ const stackSansNotch = localFont({
 
 export const metadata: Metadata = {
   title:
-    "CLP Equipment Limited | Construction & Heavy Equipment in Kingston, TN",
+    "Greenbolt Electric | Electrician & Electrical Services in Spicewood, TX",
 
   icons: {
     icon: "/images/logo.png",
@@ -42,69 +42,67 @@ export const metadata: Metadata = {
   },
 
   description:
-    "CLP Equipment Limited provides construction, mining, road building, forestry and material handling equipment, parts and service solutions in Kingston, Tennessee.",
+    "Greenbolt Electric is a family-owned electrical service company providing reliable electrical repairs, panel upgrades, lighting, remodeling and specialty electrical services throughout Spicewood and the Highland Lakes area of Texas.",
 
   keywords: [
-    "CLP Equipment Limited",
-    "CLP Equipment",
-    "CLP Equipment Kingston TN",
-    "CLP Equipment Tennessee",
-    "heavy equipment Kingston TN",
-    "construction equipment Kingston TN",
-    "construction equipment Tennessee",
-    "heavy machinery Tennessee",
-    "heavy equipment dealer Tennessee",
-    "construction equipment dealer Tennessee",
-    "construction machinery Tennessee",
-    "excavators Tennessee",
-    "wheel loaders Tennessee",
-    "dozers Tennessee",
-    "mining equipment Tennessee",
-    "mining machinery Tennessee",
-    "road construction equipment Tennessee",
-    "road building equipment Tennessee",
-    "asphalt equipment Tennessee",
-    "material handling equipment Tennessee",
-    "forestry equipment Tennessee",
-    "drilling equipment Tennessee",
-    "crushing and screening equipment Tennessee",
-    "equipment parts Tennessee",
-    "heavy equipment parts Tennessee",
-    "equipment service Tennessee",
-    "heavy equipment service Tennessee",
-    "construction equipment parts",
-    "construction equipment service",
-    "industrial equipment Tennessee",
-    "commercial equipment Tennessee",
-    "equipment rental Tennessee",
-    "Kingston TN equipment dealer",
-    "Roane County equipment dealer",
-    "East Tennessee heavy equipment",
+    "Greenbolt Electric",
+    "Greenbolt Electric Spicewood",
+    "Greenbolt Electric Texas",
+    "electrician Spicewood TX",
+    "electrician Spicewood Texas",
+    "electrical contractor Spicewood TX",
+    "electrical services Spicewood TX",
+    "electrician Highland Lakes TX",
+    "electrical contractor Highland Lakes",
+    "electrical services Highland Lakes",
+    "electrician Lakeway TX",
+    "electrician Marble Falls TX",
+    "electrician Horseshoe Bay TX",
+    "electrician Lake Travis TX",
+    "residential electrician Texas",
+    "residential electrical services",
+    "electrical repairs Texas",
+    "electrical repair Spicewood TX",
+    "panel upgrades Texas",
+    "electrical panel upgrade Spicewood",
+    "lighting installation Texas",
+    "lighting and fixtures Spicewood",
+    "home electrical contractor Texas",
+    "home electrical repairs",
+    "remodeling electrical services",
+    "electrical work for remodeling",
+    "outdoor electrical services",
+    "specialty electrical services",
+    "local electrician Texas",
+    "family owned electrician Texas",
+    "licensed electrician Spicewood",
+    "electrical contractor Highland Lakes TX",
+    "electrician near Spicewood TX",
   ],
 
   authors: [
     {
-      name: "CLP Equipment Limited",
+      name: "Greenbolt Electric",
     },
   ],
 
-  creator: "CLP Equipment Limited",
-  publisher: "CLP Equipment Limited",
-  applicationName: "CLP Equipment Limited",
+  creator: "Greenbolt Electric",
+  publisher: "Greenbolt Electric",
+  applicationName: "Greenbolt Electric",
 
-  category: "Construction & Heavy Equipment",
+  category: "Electrical Services",
 
-  metadataBase: new URL("https://clpequipment.com"),
+  metadataBase: new URL("https://greenboltelectric.com"),
 
   openGraph: {
-    title: "CLP Equipment Limited | Construction & Heavy Equipment",
+    title: "Greenbolt Electric | Reliable Electrical Services in Spicewood, TX",
 
     description:
-      "Construction, mining, road building, forestry and material handling equipment, parts and service solutions from CLP Equipment Limited in Kingston, Tennessee.",
+      "Family-owned electrical service for homes, properties and specialty projects throughout Spicewood and the Highland Lakes area of Texas.",
 
-    url: "https://clpequipment.com",
+    url: "https://greenboltelectric.com",
 
-    siteName: "CLP Equipment Limited",
+    siteName: "Greenbolt Electric",
 
     locale: "en_US",
 
@@ -114,10 +112,11 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "CLP Equipment Limited | Heavy Equipment & Construction Equipment",
+    title:
+      "Greenbolt Electric | Electrician & Electrical Services in Spicewood, TX",
 
     description:
-      "Explore construction, mining, road building, forestry and material handling equipment, parts and service solutions from CLP Equipment Limited.",
+      "Family-owned electrical service providing repairs, panel upgrades, lighting, remodeling and specialty electrical services throughout the Highland Lakes area.",
   },
 
   robots: {

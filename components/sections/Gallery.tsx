@@ -4,17 +4,13 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const images = {
-  electrician:
-    "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1800&q=88",
-  panel:
-    "https://images.unsplash.com/photo-1660330589693-99889d60181e?auto=format&fit=crop&w=1400&q=85",
-  pendants:
-    "https://images.unsplash.com/photo-1581784878214-8d5596b98a01?auto=format&fit=crop&w=1400&q=85",
-  kitchen:
-    "https://images.unsplash.com/photo-1628745277862-bc0b2d68c50c?auto=format&fit=crop&w=1400&q=85",
-  lights:
-    "https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=1200&q=85",
-  dock: "https://images.unsplash.com/photo-1606447340250-c75057827dc9?auto=format&fit=crop&w=1400&q=85",
+  electrician: "/images/gallery2.webp",
+  panel: "/images/gallery3.webp",
+  pendants: "/images/gallery4.webp",
+  kitchen: "/images/gallery5.webp",
+  lights: "/images/gallery6.webp",
+  dock: "/images/gallery8.webp",
+  duck: "/images/gsllery7.webp",
 };
 
 const galleryItems = [
@@ -39,7 +35,7 @@ const galleryItems = [
     className: "gallery-wide",
   },
   {
-    src: images.dock,
+    src: images.duck,
     label: "Outdoor Projects",
     className: "gallery-wide",
   },

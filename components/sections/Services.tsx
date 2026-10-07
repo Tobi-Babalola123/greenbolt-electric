@@ -14,33 +14,33 @@ import { motion } from "framer-motion";
 const services = [
   {
     icon: Wrench,
-    title: "Electrical Repairs",
-    text: "Troubleshooting, breaker issues, GFCI replacement, outlets, switches and electrical repairs.",
+    title: "Troubleshooting & Repairs",
+    text: "Electrical troubleshooting, tripping breakers, tripping GFCIs, replacing plugs, switches and other electrical repairs.",
   },
   {
     icon: Gauge,
-    title: "Electrical Upgrades",
-    text: "Panel upgrades, dedicated circuits, surge protection and other electrical improvements.",
+    title: "Panel & Circuit Upgrades",
+    text: "Panel upgrades, breaker replacement, dedicated circuits, surge protection and other electrical improvements.",
   },
   {
     icon: LampCeiling,
-    title: "Lighting & Fixtures",
-    text: "Lighting installation, recessed lighting, ceiling fans and decorative fixture installation.",
+    title: "Lighting & Fans",
+    text: "Lighting installation, recessed lighting, ceiling fan installation and fixture upgrades throughout your home.",
   },
   {
     icon: Hammer,
-    title: "Remodeling Electrical",
-    text: "Electrical work for kitchen, bathroom and complete home remodeling projects.",
+    title: "Kitchen & Bath Remodels",
+    text: "Professional electrical work for kitchen and bathroom remodels, including new circuits, lighting and fixtures.",
   },
   {
     icon: PlugZap,
-    title: "Outdoor & Specialty",
-    text: "Boat dock electrical, generators, exterior projects and specialty installations.",
+    title: "EV Chargers & Generators",
+    text: "Electric vehicle charger installation, generator hook-ups and other specialty electrical installations.",
   },
   {
     icon: ShieldCheck,
-    title: "Safety & Maintenance",
-    text: "Electrical safety checks, preventative maintenance and reliable ongoing service.",
+    title: "Safety & Electrical Checks",
+    text: "Electrical safety check-ups, inspections, preventative improvements and solutions to keep your home safe.",
   },
 ];
 
@@ -166,8 +166,8 @@ export default function Services() {
         <Reveal>
           <SectionHeading
             eyebrow="Our Services"
-            title="Electrical Services You Can Count On"
-            description="From everyday electrical repairs to complete installations and upgrades, Greenbolt Electric provides dependable solutions for homes and properties throughout the area."
+            title="Residential Electrical Services"
+            description="From remodels and installations to troubleshooting and repairs, Greenbolt Electric provides dependable electrical services for homes throughout the Highland Lakes area."
           />
         </Reveal>
 
@@ -202,7 +202,7 @@ export default function Services() {
                 href="#contact"
                 className="group/link relative z-[1] inline-flex items-center gap-[7px] text-[12px] font-extrabold uppercase tracking-[0.04em] text-[#2C8F0D] transition-colors hover:text-[#43C91A]"
               >
-                Learn more
+                Ask About This Service
                 <ArrowRight
                   size={16}
                   className="transition-transform duration-200 group-hover/link:translate-x-1"
@@ -215,7 +215,7 @@ export default function Services() {
         {/* CTA */}
         <div className="mt-[42px] flex justify-center">
           <ButtonLink href="#contact" variant="dark">
-            View All Services
+            Request Service
             <ArrowRight size={18} />
           </ButtonLink>
         </div>
